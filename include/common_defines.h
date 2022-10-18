@@ -1,5 +1,4 @@
-#ifndef INCLUDE_COMMON_DEFINES_H_
-#define INCLUDE_COMMON_DEFINES_H_
+ine INCLUDE_COMMON_DEFINES_H_
 
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
@@ -11,9 +10,9 @@
 //*************************************************************************
 #define MOTOR_STEPS 1600
 #define MICROSTEPS 1
-#define DIR 8
 #define STEP 9
 #define SLEEP 10
+#define DIR 11
 uint8_t RPM = 120;
 BasicStepperDriver stepper(MOTOR_STEPS, DIR, STEP, SLEEP);
 //*************************************************************************
@@ -23,10 +22,10 @@ LiquidCrystal_I2C lcd(0x27, 20, 4);
 //*************************************************************************
 // Globais
 //*************************************************************************
-Pushbutton button_down(4);
 Pushbutton button_up(5);
-Pushbutton button_select(6);
-Pushbutton button_esc(7);
+Pushbutton button_esc(6);
+Pushbutton button_down(7);
+Pushbutton button_select(8);
 //*************************************************************************
 // Variáveis Menu
 //*************************************************************************
